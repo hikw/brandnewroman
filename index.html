@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="faq-overlay">
+    <a href="javacript:void(0)" class="faq-close-btn">&times;</a>
+
+    <div class="faq-content">
+      <p>
+       Express yourself with brands:
+        <br>
+        <h2>What's a 'color font?'</h2>
+        <p>Color fonts are svg fonts with embedded colors, allowing for multicolored characters. Brand New Roman is available in both colored and monochrome options.</p>
+        <h2>Wow, where can I use colored fonts?</h2>
+        <p>Currently OpenType-SVG color fonts are supported in FireFox, Edge, and Adobe Photoshop/Illustrator/InDesign CC 2018+. Safari support is coming in September. We don't know the timeline for Chrome support :(</p>
+        <h2> Who made this?</h2>
+        <p>Brand New Roman is a project by <a href="hellovelocity.com">Hello Velocity</a>, a creative studio based in New York.</p>
+        <h2>Do you have permission to use all these logos? Or is it fair use?</h2>
+        <p>Are you kidding? Of course we don't have permission. It might be fair use since we're not selling the font. But we can't fight a c&d anyway so whatever.</p>
+        <h2>Can I use this font for my project?</h2>
+        <p>Sure, go ahead, that's why we made it! If you're doing commercial work you probably can't take the chance on using other companies' logos, so we're not worried about that aspect of it either! We'd ask you to credit us like you would any other font you use.</p>
+        <h2>Are you a type design studio? How did you make this?</h2>
+        <p>We absolutely are not. We think kerning is something you do in preparation to make corn salad. We made this font using <a href="fontself.com">Fontself</a>.</p>
+        <h2>What do you guys do normally?</h2>
+        <p>We're a digital studio that makes cool stuff on the web, for brands and for ourselves. If you'd like to say hi, <span id="copytext">hit us up</span>.</p>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="header">
+    <div class="header-title">
+      <p id="page-title"><strong>Brand New Roman </strong><span id="by-hv">by Hello Velocity</span></p>
+    </div>
+
+    <div class="header-items">
+      <div class="header-link">Download</div>
+      <div class="header-link">Try Now!</div>
+    </div>
+  </div>
+
+  <div class="splash flex-center">
+    <div class="title-block flex-center shadow1">
+      <img class="large-image" src="img/sample-title-image.png">
+      <img class="small-image" src="img/sample-title-image-mobile.png">
+      <p>
+       A Color Font
+      </p>
+    </div>
+
+    <div class="faq-link flex-center shadow1">
+      dafuq?
+    </div>
+  </div>
+
+  <div class="type-sample flex-center">
+    <img>
+  </div>
+
+  <div class="download-bar">
+    <div class="download-block dl-bw flex-center">
+      <p class="download-button">download</p>
+      <p>BrandNewRoman-BW.otf &#x2193;</p>
+    </div>
+    <div class="download-block dl-color flex-center">
+      <p class="download-button">download</p>
+      <p>BrandNewRoman-Color.otf &#x2193;</p>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item flex-center"><img class="gallery-image shadow1" src="img/gallery1.png"></div><div class="gallery-item flex-center"><img class="gallery-image shadow1" src="img/gallery2.png"></div><div class="gallery-item flex-center"><img class="gallery-image shadow1" src="img/gallery3.png"></div><div class="gallery-item flex-center"><img class="gallery-image shadow1" src="img/gallery4.png"></div><div class="clear"></div>
+  </div>
+
+  <div class="footer">
+  </div>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+        $(document).ready(function() {
+        $('.faq-link').hover(function() {
+          $(this).html('da F.A.Q.');
+        }, function() {
+          $(this).html('dafuq?');
+        });
+      });
+
+        $(document).ready(function(){
+          $(".faq-link").click(function(){
+            $(".faq-overlay").fadeToggle(300);
+          });
+        });
+
+        $(document).ready(function(){
+          $(".faq-close-btn").click(function(){
+            $(".faq-overlay").fadeToggle(300);
+          });
+        });
+
+  </script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
